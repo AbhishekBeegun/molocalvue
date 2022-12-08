@@ -1,0 +1,79 @@
+{
+    "titles":[
+        {"rdr":"Riviere Du Rempart"},
+        {"svn":"Savanne"},
+        {"pl":"Port Louis"},
+        {"pw":"Plaine Willhems"},
+        {"moka":"Moka"},
+        {"Flq":"Flacq"},
+        {"gp":"Grand Port"},
+        {"br":"Black River"},
+        {"pmple":"Pamplemousse"},
+        {"rdg":"Rodrigues"}
+    ] ,
+    "RDR":[
+        {"val":"rdr data"},
+        {"val":"80%"},
+        {"val":"👍60% 👎30%"},
+        {"val":"Great"},
+        {"val":"Clear"},
+        {"val":"80%"},
+        {"val":"Good"},
+        {"val":"16℃-22℃"},
+        {"val":"Good"},
+        {"val":"Bad"},
+        {"val":"Great"}
+    ],
+    "SVN":[
+        {"val":"SVNN data"},
+        {"val":"50%"},
+        {"val":"👍80% 👎20%"},
+        {"val":"Great"},
+        {"val":"Clear"},
+        {"val":"90%"},
+        {"val":"Good"},
+        {"val":"19℃-25℃"},
+        {"val":"Bad"},
+        {"val":"Bad"},
+        {"val":"Great"}
+    ],
+    "PL":[
+        {"val":"PL data"},
+        {"val":"60%"},
+        {"val":"👍65% 👎45%"},
+        {"val":"Bad"},
+        {"val":"Heavy"},
+        {"val":"70%"},
+        {"val":"Bad"},
+        {"val":"19℃-25℃"},
+        {"val":"Good"},
+        {"val":"Good"},
+        {"val":"Great"}
+    ],
+    "PW":[
+        {"val":"Pw data"},
+        {"val":"40%"},
+        {"val":"👍10% 👎20%"},
+        {"val":"Great"},
+        {"val":"Clear"},
+        {"val":"90%"},
+        {"val":"Good"},
+        {"val":"14℃-21℃"},
+        {"val":"Bad"},
+        {"val":"Bad"},
+        {"val":"Great"}
+    ],
+    "MOKA":[
+        {"val":"MOKa data"},
+        {"val":"10%"},
+        {"val":"👍35% 👎90%"},
+        {"val":"Great"},
+        {"val":"Clear"},
+        {"val":"90%"},
+        {"val":"Good"},
+        {"val":"15℃-22℃"},
+        {"val":"Bad"},
+        {"val":"Bad"},
+        {"val":"Great"}
+    ]
+}
