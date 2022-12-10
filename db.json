@@ -12,17 +12,17 @@
         {"rdg":"Rodrigues"}
     ] ,
     "RDR":[
-        {"val":"rdr data not accurate"},
-        {"val":"80%"},
-        {"val":"👍60% 👎30%"},
-        {"val":"Great"},
-        {"val":"Clear"},
-        {"val":"80%"},
-        {"val":"Good"},
-        {"val":"16℃-22℃"},
-        {"val":"Good"},
-        {"val":"Bad"},
-        {"val":"Great"}
+        
+        {"dtl":"🏆 Overall Score","val":"80%"},
+        {"dtl":"❤️ Liked by residents","val":"👍60% 👎30%"},
+        {"dtl":"🦺 Safety","val":"Great"},
+        {"dtl":"🚦 Traffic density","val":"Clear"},
+        {"dtl":"🙃 Happiness","val":"80%"},
+        {"dtl":"👪 Population","val":"Good"},
+        {"dtl":"🌡️ Temperature","val":"16℃-22℃"},
+        {"dtl":"🏢 Place to work","val":"Good"},
+        {"dtl":"🥳 Fun / Nightlife","val":"Bad"},
+        {"dtl":"🚶 Walkability","val":"Great"}
     ],
     "SVN":[
         {"val":"SVNN data not accurate"},

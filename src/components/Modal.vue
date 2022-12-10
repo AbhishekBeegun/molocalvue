@@ -11,27 +11,9 @@
         
         <section class="clmrw">
 
-        <div class = "rate">
-            <div class="fixedrate">
-                    <li>🏆 Overall Score</li>
-                    <li>❤️ Liked by residents</li>
-                    <li>🦺 Safety</li>
-                    <li>🚦 Traffic density</li>
-                    <li>🙃 Happiness</li>
-                    <li>👪 Population</li>
-                    <li>🌡️ Temperature</li>
-                    <li>🏢 Place to work</li>
-                    <li>🥳 Fun / Nightlife</li>
-                    <li>🚶 Walkability</li>
-            </div>
-
-
-            <div class="variblerate">
+        <div class="rate">
             <slot name="ratings">
-             
             </slot>
-
-        </div>
         </div>
 
         <div class="maps">
@@ -56,13 +38,14 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .modal{
-    width:65vw;
+    width:70vw;
     height: 90vh;
     padding: 0px;
     margin: 20px auto;
     border-radius: 15px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,9 +55,11 @@ export default {
 .imgtop{
     width:100%;
     height: 25vh;
-    background-color:pink;
+    background-color: pink;
     border-radius: 15px;
-    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .clmrw{
     display: flex;
@@ -86,33 +71,12 @@ export default {
     gap:10px;    
 }
 .rate{
-    display: flex;
-    flex-direction: row;
-    width:100%;
+    width:50%;
     height:100%;
     background-color: white;
     border-radius:15px;
     box-sizing: border-box;
-    padding: 10px;
-}
-.maps{
-    width: 100%;
-    height: 100%;
-    background: blue;
-    border-radius: 15px;
-    box-sizing: border-box;
-}
-.fixedrate{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-.fixedrate li{
-    list-style: none;
-    font-size: 1.2rem;
-    text-align: center;
+    padding: 25px;
 }
 
 .backdrop {
@@ -125,8 +89,8 @@ export default {
 .fakeclosebtn{
     position: fixed;
     color: white;
-    font-size:2rem;
-    right:20px;
+    font-size:4rem;
+    right:100px;
     top:10px;
     cursor:pointer;
     font-weight: bold;
@@ -143,7 +107,10 @@ export default {
     .clmrw{
     flex-direction: column;
     padding: 0px;
-    margin-top:-10px
+    margin-top:-20px
+    }
+    .rate{
+        width: 100%;
     }
     .maps{
         display: none;

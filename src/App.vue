@@ -9,20 +9,27 @@
  <div v-if="showModal1">
   //slot example instead of [props]
   <Modal @close="toggleModal1">
-    
-    <div v-for="title in titles" :key="title">
+       
+    <div class="title" v-for="title in titles" :key="title">
       <p>{{title.rdr}}</p>
     </div>
 
     <template v-slot:ratings>
-      <div v-for="value in RDR" :key="value">
-        <li>{{value.val}}</li>
+      <div class="details" v-for="value in RDR" :key="value">
+        <div>
+         <li>{{value.dtl}}</li>
+        </div>
+        
+        
+        <div>
+          <li>{{value.val}}</li>         
+        </div>
       </div>
     </template>
 
     <template v-slot:map>
-      <div v-for="mapss in maps" :key="mapss">
-        <img :src="`${mapss.rdr}`"/> 
+      <div class="maps" v-for="mapss in maps" :key="mapss">
+        <img :src="`${mapss.rdr}`" alt="map not loaded"/> 
       </div>
     </template>
   </Modal>
@@ -203,17 +210,47 @@ export default {
   justify-content: center;
 
 }
-.imagetop{
-  background-repeat: no-repeat;
-  background-position: center;
+
+.dftop{
+  height: 100%;
+  width: 100%;
   background-size: cover;
-  background-color: rebeccapurple;
-}
-.imagetop p{
+  background-position: center;
+  opacity: 0.4;
   z-index: 0;
-  font-size: 4rem;
-  color:aquamarine;
 }
+
+.title p{
+  font-size: 2.5rem; 
+  color: white;
+  text-align: center;
+
+}
+
+.details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    height: 10%;
+    
+}
+.details div{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.maps img {
+    background-size: contain;
+    background-position: center;
+    border-radius: 15px;
+    height:100%;
+    width: 100%;
+}
+
 
 
 .ThOME{
@@ -241,6 +278,7 @@ export default {
 .Survey p{
   font-size: 1.2rem;
 }
+
 
 .grid{
   width: 100vw;
