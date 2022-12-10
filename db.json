@@ -12,7 +12,7 @@
         {"rdg":"Rodrigues"}
     ] ,
     "RDR":[
-        {"val":"rdr data"},
+        {"val":"rdr data not accurate"},
         {"val":"80%"},
         {"val":"👍60% 👎30%"},
         {"val":"Great"},
@@ -25,7 +25,7 @@
         {"val":"Great"}
     ],
     "SVN":[
-        {"val":"SVNN data"},
+        {"val":"SVNN data not accurate"},
         {"val":"50%"},
         {"val":"👍80% 👎20%"},
         {"val":"Great"},
@@ -38,7 +38,7 @@
         {"val":"Great"}
     ],
     "PL":[
-        {"val":"PL data"},
+        {"val":"PortLois data not accurate"},
         {"val":"60%"},
         {"val":"👍65% 👎45%"},
         {"val":"Bad"},
@@ -51,7 +51,7 @@
         {"val":"Great"}
     ],
     "PW":[
-        {"val":"Pw data"},
+        {"val":"Plainewill data not accurate"},
         {"val":"40%"},
         {"val":"👍10% 👎20%"},
         {"val":"Great"},
@@ -64,7 +64,7 @@
         {"val":"Great"}
     ],
     "MOKA":[
-        {"val":"MOKa data"},
+        {"val":"MOKa data not accurate"},
         {"val":"10%"},
         {"val":"👍35% 👎90%"},
         {"val":"Great"},
@@ -75,5 +75,78 @@
         {"val":"Bad"},
         {"val":"Bad"},
         {"val":"Great"}
+    ],
+    "PAMPLE":[
+        {"val":"PAmplemousse data not accurate"},
+        {"val":"10%"},
+        {"val":"👍35% 👎90%"},
+        {"val":"Great"},
+        {"val":"Clear"},
+        {"val":"90%"},
+        {"val":"Good"},
+        {"val":"15℃-22℃"},
+        {"val":"Bad"},
+        {"val":"Bad"},
+        {"val":"Great"}
+    ],
+    "GP":[
+        {"val":"Grnad port datanot accurate"},
+        {"val":"10%"},
+        {"val":"👍35% 👎90%"},
+        {"val":"Great"},
+        {"val":"Clear"},
+        {"val":"90%"},
+        {"val":"Good"},
+        {"val":"15℃-22℃"},
+        {"val":"Bad"},
+        {"val":"Bad"},
+        {"val":"Great"}
+    ],
+    "FLQ":[
+        {"val":"Flacq data not accurate"},
+        {"val":"10%"},
+        {"val":"👍35% 👎90%"},
+        {"val":"Great"},
+        {"val":"Clear"},
+        {"val":"90%"},
+        {"val":"Good"},
+        {"val":"15℃-22℃"},
+        {"val":"Bad"},
+        {"val":"Bad"},
+        {"val":"Great"}
+    ],
+    "BR":[
+        {"val":"Black River data not accurate"},
+        {"val":"10%"},
+        {"val":"👍35% 👎90%"},
+        {"val":"Great"},
+        {"val":"Clear"},
+        {"val":"90%"},
+        {"val":"Good"},
+        {"val":"15℃-22℃"},
+        {"val":"Bad"},
+        {"val":"Bad"},
+        {"val":"Great"}
+    ],
+    "RDG":[
+        {"val":"Rodrigues data not accurate"},
+        {"val":"10%"},
+        {"val":"👍35% 👎90%"},
+        {"val":"Great"},
+        {"val":"Clear"},
+        {"val":"90%"},
+        {"val":"Good"},
+        {"val":"15℃-22℃"},
+        {"val":"Bad"},
+        {"val":"Bad"},
+        {"val":"Great"}
+    ],
+    "maps" : [
+        {"rdr":"https://cdn.sanity.io/images/e7woiqxp/production/4c7e0aa385cdec539afe82a3ca073a96b78ee697-650x338.png?w=2000&fit=max&auto=format"},
+        {"svn": "https://cdn.sanity.io/images/e7woiqxp/production/e953677149bd7c62328d4fd7e5824ae03d04293b-650x338.png?w=2000&fit=max&auto=format"}
+    ],
+    "img" : [
+        {"rdr":"https://cdn.sanity.io/images/e7woiqxp/production/6c088b7f878c304a7058a3fb51ca76ea8b70b149-1232x822.jpg?w=2000&fit=max&auto=format"},
+        {"svn":"https://cdn.sanity.io/images/e7woiqxp/production/2361c8951baad05401955038d2b893053b030485-1243x1303.jpg?w=2000&fit=max&auto=format"}
     ]
 }

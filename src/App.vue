@@ -9,7 +9,7 @@
  <div v-if="showModal1">
   //slot example instead of [props]
   <Modal @close="toggleModal1">
-
+    
     <div v-for="title in titles" :key="title">
       <p>{{title.rdr}}</p>
     </div>
@@ -21,7 +21,9 @@
     </template>
 
     <template v-slot:map>
-      <a href="a">Map images</a>
+      <div v-for="mapss in maps" :key="mapss">
+        <img :src="`${mapss.rdr}`"/> 
+      </div>
     </template>
   </Modal>
  </div>
@@ -48,7 +50,7 @@
 <section class="grid">
 
  <button style="background-image:url(https://cdn.sanity.io/images/e7woiqxp/production/6c088b7f878c304a7058a3fb51ca76ea8b70b149-1232x822.jpg?w=2000&fit=max&auto=format)"
- @click="toggleModal1">RIveduremp</button>
+ @click="toggleModal1">Riveie du rempard</button>
 
  <button style="background-image:url(https://cdn.sanity.io/images/e7woiqxp/production/2361c8951baad05401955038d2b893053b030485-1243x1303.jpg?w=2000&fit=max&auto=format)"
  @click="toggleModal2">Savamme</button>
@@ -101,6 +103,8 @@ export default {
 
         title:'Molocal version2',
         titles:[],
+        img:[],
+        maps:[],
         RDR:[],
         SVN:[],
 
@@ -130,6 +134,14 @@ export default {
       fetch('http://localhost:3000/SVN')
       .then(res => res.json())
       .then(data => this.SVN = data)
+
+      fetch('http://localhost:3000/maps')
+      .then(res => res.json())
+      .then(data => this.maps = data)
+
+      fetch('http://localhost:3000/img')
+      .then(res => res.json())
+      .then(data => this.img = data)
     },
 
 
@@ -198,10 +210,12 @@ export default {
   background-color: rebeccapurple;
 }
 .imagetop p{
-  z-index: 2;
+  z-index: 0;
   font-size: 4rem;
   color:aquamarine;
 }
+
+
 .ThOME{
   /*background-image:url("https://source.unsplash.com/random/") ;*/
   background-position: center;
