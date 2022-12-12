@@ -4,7 +4,7 @@
         <div class="modal">
 
 
-            <div class="imgtop">
+            <div class="imgtop" @click="BackgroundColors = 'cornflowerblue'" >
              <slot></slot>
             </div>
         
@@ -28,12 +28,16 @@
 
 <script>
 export default {
-    props:[ ],
+    data(){
+        return{
+            BackgroundColors:["tomato"],
+        }
+    },
 
     methods : {
         closeModal () {
             this.$emit('close')
-        }
+        },
     }
 }
 </script>
@@ -49,14 +53,14 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:10px;
+    gap:15px;
 }
 
 .imgtop{
     width:100%;
     height: 25vh;
-    background-color: pink;
     border-radius: 15px;
+    background: v-bind(BackgroundColors);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,7 +72,7 @@ export default {
     width: 100%;
     box-sizing: border-box;
     justify-content: space-evenly;
-    gap:10px;    
+    gap:15px;    
 }
 .rate{
     width:50%;
@@ -107,13 +111,17 @@ export default {
     .clmrw{
     flex-direction: column;
     padding: 0px;
-    margin-top:-20px
+    margin-top:-25px
     }
     .rate{
         width: 100%;
     }
     .maps{
         display: none;
+    }
+    .fakeclosebtn{
+        right:20px;
+        font-size: 2rem;
     }
 }
 </style>
