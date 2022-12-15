@@ -42,7 +42,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .modal{
     width:70vw;
     height: 90vh;
@@ -67,7 +67,6 @@ export default {
 }
 .clmrw{
     display: flex;
-    flex-direction: row;
     height: 100%;
     width: 100%;
     box-sizing: border-box;

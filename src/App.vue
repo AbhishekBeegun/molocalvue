@@ -9,39 +9,29 @@
  <div v-if="showModal1">
   <Modal @close="toggleModal1">
        
-    <div class="title" v-for="title in titles" :key="title">
-      <p>{{title.rdr}}</p>
+    <div class="title">
+      <!-- v-for="title in titles" :key="title" kav servi pu display all item in array <p>{{title}}</p> -->
+      <p>{{titles.rdr}}</p>
     </div>
 
     <template v-slot:ratings>
-      <div class="details" v-for="value in RDR" :key="value">
-        <div>
-         <li>{{value.dtl}}</li>
-        </div>
-        
-        
-        <div>
-          <li>{{value.val}}</li>           
-        </div>
-
-
-      </div>
+      <div class="details" v-for="item in fix" :key="item">{{item}}</div>
+      <div class="detailval" v-for="items in RDR" :key="items">{{items}}</div>
     </template>
 
     <template v-slot:map>
-      <div class="maps" v-for="mapss in maps" :key="mapss">
-        <img :src="`${mapss.rdr}`" alt="."/> 
+      <div class="maps">
+        <img :src="`${maps.rdr}`" alt="not loaded" />
       </div>
     </template>
   </Modal>
  </div>
 
-
  <div v-if="showModal2">
   <Modal @close="toggleModal2">
        
-       <div class="title" v-for="title in titles" :key="title">
-         <p>{{title.svn}}</p>
+       <div class="title">
+         <p>{{titles.svn}}</p>
        </div>
    
        <template v-slot:ratings>
@@ -60,8 +50,8 @@
        </template>
    
        <template v-slot:map>
-         <div class="maps" v-for="mapss in maps" :key="mapss">
-           <img :src="`${mapss.svn}`" alt="."/> 
+         <div class="maps">
+           <img :src="`${maps.svn}`" alt="."/> 
          </div>
        </template>
   </Modal>
@@ -70,8 +60,8 @@
  <div v-if="showModal3">
   <Modal @close="toggleModal3">
        
-       <div class="title" v-for="title in titles" :key="title">
-         <p>{{title.pl}}</p>
+       <div class="title">
+         <p>{{titles.pl}}</p>
        </div>
    
        <template v-slot:ratings>
@@ -90,8 +80,8 @@
        </template>
    
        <template v-slot:map>
-         <div class="maps" v-for="mapss in maps" :key="mapss">
-           <img :src="`${mapss.pl}`" alt="."/> 
+         <div class="maps">
+           <img :src="`${maps.pl}`" alt="."/> 
          </div>
        </template>
   </Modal>
@@ -100,8 +90,8 @@
  <div v-if="showModal4">
   <Modal @close="toggleModal4">
        
-       <div class="title" v-for="title in titles" :key="title">
-         <p>{{title.pw}}</p>
+       <div class="title">
+         <p>{{titles.pw}}</p>
        </div>
    
        <template v-slot:ratings>
@@ -120,8 +110,8 @@
        </template>
    
        <template v-slot:map>
-         <div class="maps" v-for="mapss in maps" :key="mapss">
-           <img :src="`${mapss.pw}`" alt="."/> 
+         <div class="maps">
+           <img :src="`${maps.pw}`" alt="."/> 
          </div>
        </template>
   </Modal>
@@ -130,8 +120,8 @@
  <div v-if="showModal5">
   <Modal @close="toggleModal5">
        
-       <div class="title" v-for="title in titles" :key="title">
-         <p>{{title.moka}}</p>
+       <div class="title">
+         <p>{{titles.moka}}</p>
        </div>
    
        <template v-slot:ratings>
@@ -150,8 +140,8 @@
        </template>
    
        <template v-slot:map>
-         <div class="maps" v-for="mapss in maps" :key="mapss">
-           <img :src="`${mapss.moka}`" alt="."/> 
+         <div class="maps">
+           <img :src="`${maps.moka}`" alt="."/> 
          </div>
        </template>
   </Modal>
@@ -160,8 +150,8 @@
  <div v-if="showModal6">
   <Modal @close="toggleModal6">
        
-       <div class="title" v-for="title in titles" :key="title">
-         <p>{{title.pample}}</p>
+       <div class="title">
+         <p>{{titles.pample}}</p>
        </div>
    
        <template v-slot:ratings>
@@ -180,8 +170,8 @@
        </template>
    
        <template v-slot:map>
-         <div class="maps" v-for="mapss in maps" :key="mapss">
-           <img :src="`${mapss.pample}`" alt="."/> 
+         <div class="maps">
+           <img :src="`${maps.pample}`" alt="."/> 
          </div>
        </template>
   </Modal>
@@ -190,8 +180,8 @@
  <div v-if="showModal7">
   <Modal @close="toggleModal7">
        
-       <div class="title" v-for="title in titles" :key="title">
-         <p>{{title.gp}}</p>
+       <div class="title">
+         <p>{{titles.gp}}</p>
        </div>
    
        <template v-slot:ratings>
@@ -210,8 +200,8 @@
        </template>
    
        <template v-slot:map>
-         <div class="maps" v-for="mapss in maps" :key="mapss">
-           <img :src="`${mapss.gp}`" alt="."/> 
+         <div class="maps">
+           <img :src="`${maps.gp}`" alt="."/> 
          </div>
        </template>
   </Modal>
@@ -220,8 +210,8 @@
  <div v-if="showModal8">
   <Modal @close="toggleModal8">
        
-       <div class="title" v-for="title in titles" :key="title">
-         <p>{{title.flq}}</p>
+       <div class="title">
+         <p>{{titles.flq}}</p>
        </div>
    
        <template v-slot:ratings>
@@ -240,8 +230,8 @@
        </template>
    
        <template v-slot:map>
-         <div class="maps" v-for="mapss in maps" :key="mapss">
-           <img :src="`${mapss.flq}`" alt="."/> 
+         <div class="maps">
+           <img :src="`${maps.flq}`" alt="."/> 
          </div>
        </template>
   </Modal>
@@ -250,8 +240,8 @@
  <div v-if="showModal9">
   <Modal @close="toggleModal9">
        
-       <div class="title" v-for="title in titles" :key="title">
-         <p>{{title.br}}</p>
+       <div class="title">
+         <p>{{titles.br}}</p>
        </div>
    
        <template v-slot:ratings>
@@ -270,8 +260,8 @@
        </template>
    
        <template v-slot:map>
-         <div class="maps" v-for="mapss in maps" :key="mapss">
-           <img :src="`${mapss.br}`" alt="."/> 
+         <div class="maps">
+           <img :src="`${maps.br}`" alt="."/> 
          </div>
        </template>
   </Modal>
@@ -280,8 +270,8 @@
  <div v-if="showModal10">
   <Modal @close="toggleModal10">
        
-       <div class="title" v-for="title in titles" :key="title">
-         <p>{{title.rdg}}</p>
+       <div class="title">
+         <p>{{titles.rdg}}</p>
        </div>
    
        <template v-slot:ratings>
@@ -300,8 +290,8 @@
        </template>
    
        <template v-slot:map>
-         <div class="maps" v-for="mapss in maps" :key="mapss">
-           <img :src="`${mapss.rdg}`" alt="."/> 
+         <div class="maps">
+           <img :src="`${maps.rdg}`" alt="."/> 
          </div>
        </template>
   </Modal>
@@ -310,36 +300,36 @@
 
 
 <section class="grid">
+  <!-- v-for="btntle in btntitle.slice(1,2)" :key="btntle" in array btntitle -->
+ <button style="background-image:url(https://cdn.sanity.io/images/e7woiqxp/production/6c088b7f878c304a7058a3fb51ca76ea8b70b149-1232x822.jpg?w=2000&fit=max&auto=format)"
+ @click="toggleModal1">{{titles.rdr}}</button>
 
- <button v-for="btntle in btntitle.slice(0,1)" :key="btntle" style="background-image:url(https://cdn.sanity.io/images/e7woiqxp/production/6c088b7f878c304a7058a3fb51ca76ea8b70b149-1232x822.jpg?w=2000&fit=max&auto=format)"
- @click="toggleModal1">{{btntle}}</button>
+ <button style="background-image:url(https://cdn.sanity.io/images/e7woiqxp/production/2361c8951baad05401955038d2b893053b030485-1243x1303.jpg?w=2000&fit=max&auto=format)"
+ @click="toggleModal2">{{titles.svn}}</button>
 
- <button v-for="btntle in btntitle.slice(1,2)" :key="btntle" style="background-image:url(https://cdn.sanity.io/images/e7woiqxp/production/2361c8951baad05401955038d2b893053b030485-1243x1303.jpg?w=2000&fit=max&auto=format)"
- @click="toggleModal2">{{btntle}}</button>
+ <button style="background-image:url(https://cdn.sanity.io/images/e7woiqxp/production/c1e1d5ef19744aba3bff6b66ffdf6055c0cb39ec-2048x875.jpg?w=2000&fit=max&auto=format)"
+ @click="toggleModal3">{{titles.pl}}</button>
 
- <button v-for="btntle in btntitle.slice(2,3)" :key="btntle" style="background-image:url(https://cdn.sanity.io/images/e7woiqxp/production/c1e1d5ef19744aba3bff6b66ffdf6055c0cb39ec-2048x875.jpg?w=2000&fit=max&auto=format)"
- @click="toggleModal3">{{btntle}}</button>
+ <button style="background-image:url(https://cdn.sanity.io/images/e7woiqxp/production/21b390df9a8f8d77d6e5ee8107c4c6359bb3de34-1100x732.jpg?w=2000&fit=max&auto=format)"
+ @click="toggleModal4">{{titles.pw}}</button>
 
- <button v-for="btntle in btntitle.slice(3,4)" :key="btntle" style="background-image:url(https://cdn.sanity.io/images/e7woiqxp/production/21b390df9a8f8d77d6e5ee8107c4c6359bb3de34-1100x732.jpg?w=2000&fit=max&auto=format)"
- @click="toggleModal4">{{btntle}}</button>
+ <button style="background-image:url(https://cdn.sanity.io/images/e7woiqxp/production/f6035ecffe9e28d8af8dae6c663f4d2797adca3b-1600x900.jpg?w=2000&fit=max&auto=format)"
+ @click="toggleModal5">{{titles.moka}}</button>
 
- <button v-for="btntle in btntitle.slice(4,5)" :key="btntle" style="background-image:url(https://cdn.sanity.io/images/e7woiqxp/production/f6035ecffe9e28d8af8dae6c663f4d2797adca3b-1600x900.jpg?w=2000&fit=max&auto=format)"
- @click="toggleModal5">{{btntle}}</button>
+ <button style="background-image:url(https://cdn.sanity.io/images/e7woiqxp/production/3158ebf725b7816a9fa69df490e70d552c2a2056-1024x768.jpg?w=2000&fit=max&auto=format)"
+ @click="toggleModal6">{{titles.pample}}</button>
 
- <button v-for="btntle in btntitle.slice(5,6)" :key="btntle" style="background-image:url(https://cdn.sanity.io/images/e7woiqxp/production/3158ebf725b7816a9fa69df490e70d552c2a2056-1024x768.jpg?w=2000&fit=max&auto=format)"
- @click="toggleModal6">{{btntle}}</button>
+ <button style="background-image:url(https://cdn.sanity.io/images/e7woiqxp/production/a76af7843510a36d54a4429a40aeef055fcdbb6c-1024x768.jpg?w=2000&fit=max&auto=format)"
+ @click="toggleModal7">{{titles.gp}}</button>
 
- <button v-for="btntle in btntitle.slice(6,7)" :key="btntle" style="background-image:url(https://cdn.sanity.io/images/e7woiqxp/production/a76af7843510a36d54a4429a40aeef055fcdbb6c-1024x768.jpg?w=2000&fit=max&auto=format)"
- @click="toggleModal7">{{btntle}}</button>
+ <button style="background-image:url(https://cdn.sanity.io/images/e7woiqxp/production/c2d16540dbd945da75a8434bb273024124b9ec73-1280x720.jpg?w=2000&fit=max&auto=format)"
+ @click="toggleModal8">{{titles.flq}}</button>
 
- <button v-for="btntle in btntitle.slice(7,8)" :key="btntle" style="background-image:url(https://cdn.sanity.io/images/e7woiqxp/production/c2d16540dbd945da75a8434bb273024124b9ec73-1280x720.jpg?w=2000&fit=max&auto=format)"
- @click="toggleModal8">{{btntle}}</button>
+ <button style="background-image:url(https://cdn.sanity.io/images/e7woiqxp/production/146d85c61c7af2b3539d5004994270b7f07ee9db-1400x974.jpg?w=2000&fit=max&auto=format)"
+ @click="toggleModal9">{{titles.br}}</button>
 
- <button v-for="btntle in btntitle.slice(8,9)" :key="btntle"  style="background-image:url(https://cdn.sanity.io/images/e7woiqxp/production/146d85c61c7af2b3539d5004994270b7f07ee9db-1400x974.jpg?w=2000&fit=max&auto=format)"
- @click="toggleModal9">{{btntle}}</button>
-
- <button v-for="btntle in btntitle.slice(9,10)" :key="btntle" style="background-image:url()"
- @click="toggleModal10">{{btntle}}</button>
+ <button style="background-image:url()"
+ @click="toggleModal10">{{titles.rdg}}</button>
 
 </section>
 
@@ -358,6 +348,9 @@
 </template>
 
 <script>
+const baseURL = "https://abhishekbeegun.github.io/Data/molocal.json";
+
+
 import Modal from './components/Modal.vue'
 export default {
   name: 'App',
@@ -367,10 +360,10 @@ export default {
 
   data(){
       return{
-        title:'Molocal version2',
         btntitle:['Riviere Du Rempart','Savanne','Port Louis','Plaine Willhems','Moka','Pamplemousse','Grand Port','Flacq','Black River','Rodrigues'],
         titles:[],
-        img:[],
+        fix:[],
+        imgs:[],
         maps:[],
         RDR:[],
         SVN:[],
@@ -384,7 +377,7 @@ export default {
         RDG:[],
 
 
-        showModal1: false,
+        showModal1: true,
         showModal2 : false,
         showModal3 : false,
         showModal4 : false,
@@ -398,59 +391,69 @@ export default {
     },
 
     mounted(){
-      fetch('http://localhost:3000/titles')
+      fetch(`${baseURL}`)
       .then(res => res.json())
-      .then(data => this.titles = data)
+      .then(data => this.titles = data[0])
       .catch(err => console.log(err.message))
 
-      fetch('http://localhost:3000/RDR')
+      fetch(`${baseURL}`)
       .then(res => res.json())
-      .then(data => this.RDR = data)
+      .then(data => this.fix = data[13])
 
-      fetch('http://localhost:3000/SVN')
+      fetch(`${baseURL}`)
+      .then(res => res.json())
+      .then(data => this.RDR = data[1])
+      .then(RDR => console.log(RDR))
+
+      fetch(`${baseURL}`)
+      .then(res => res.json())
+      .then(data => this.maps = data[11])
+
+      //fetch('http://localhost:3000/SVN')
       .then(res => res.json())
       .then(data => this.SVN = data)
 
-      fetch('http://localhost:3000/PL')
+      //fetch('http://localhost:3000/PL')
       .then(res => res.json())
       .then(data => this.PL = data)
 
-      fetch('http://localhost:3000/PW')
+      //fetch('http://localhost:3000/PW')
       .then(res => res.json())
       .then(data => this.PW = data)
 
-      fetch('http://localhost:3000/MOKA')
+      //fetch('http://localhost:3000/MOKA')
       .then(res => res.json())
       .then(data => this.MOKA = data)
 
-      fetch('http://localhost:3000/PAMPLE')
+      //fetch('http://localhost:3000/PAMPLE')
       .then(res => res.json())
       .then(data => this.PAMPLE = data)
 
-      fetch('http://localhost:3000/GP')
+      //fetch('http://localhost:3000/GP')
       .then(res => res.json())
       .then(data => this.GP = data)
 
-      fetch('http://localhost:3000/FLQ')
+      //fetch('http://localhost:3000/FLQ')
       .then(res => res.json())
       .then(data => this.FLQ= data)
 
-      fetch('http://localhost:3000/BR')
+      //fetch('http://localhost:3000/BR')
       .then(res => res.json())
       .then(data => this.BR = data)
 
-      fetch('http://localhost:3000/maps')
+      //fetch('http://localhost:3000/maps')
       .then(res => res.json())
       .then(data => this.maps = data)
 
-      fetch('http://localhost:3000/img')
+      //fetch('http://localhost:3000/img')
       .then(res => res.json())
-      .then(data => this.img = data)
+      .then(data => this.img = data)//
 
     },
 
 
     methods:{
+
       toggleModal1() {
         this.showModal1 = !this.showModal1
         
@@ -524,7 +527,7 @@ export default {
 }
 
 .title p{
-  font-size: 2.5rem; 
+  font-size: 2rem; 
   color: white;
   text-align: center;
 
@@ -533,23 +536,26 @@ export default {
 .details{
     display: flex;
     flex-direction: row;
+    background-color: yellow;
     align-items: center;
-    justify-content: space-between;
-    width:100%;
+    width: 50%;
     height: 10%;
-    
-}
-.details div{
-    display: flex;
-    justify-content: space-evenly;
     list-style: none;
     font-size: 1.2rem;
+    color: black; 
 }
-.details div:nth-child(2){
-  padding:10px;
-  color:black;
-  border-radius: 10px;
+.detailval{
+    display: flex;
+    flex-direction: column;
+    background-color: cornflowerblue;
+    width:50%;
+    height: 10%;
+    font-size:1.2rem;
+    list-style: none;
+    color: black; 
 }
+
+
 
 .Green{
   background-color: limegreen;
