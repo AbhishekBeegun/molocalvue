@@ -42,7 +42,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .modal{
     width:70vw;
     height: 90vh;
@@ -67,6 +67,7 @@ export default {
 }
 .clmrw{
     display: flex;
+    flex-direction:row;
     height: 100%;
     width: 100%;
     box-sizing: border-box;
@@ -80,6 +81,9 @@ export default {
     border-radius:15px;
     box-sizing: border-box;
     padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .backdrop {
@@ -98,7 +102,7 @@ export default {
     cursor:pointer;
     font-weight: bold;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1000px){
     .modal{
      width:100vw;
      height: 100%;
