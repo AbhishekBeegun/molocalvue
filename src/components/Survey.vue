@@ -63,7 +63,7 @@
                 <option value="bad">Bad</option>
             </select>
 
-            <input type="submit" disabled>
+            <input type="submit" disabled style="padding:25px;">
         </form>
 
     </div>
@@ -87,7 +87,9 @@ export default {
 .modal{
   background: rgba(0,0,0,0);
   backdrop-filter: blur(10px);
-  z-index: 1;
+  border-color: white;
+  border:2px;
+  z-index: 2;
 }
 .backdrop{
     background: rgba(0,0,0,0.0);
@@ -111,7 +113,8 @@ label{
 }
 select{
     font-size: 1.2rem;
-
+    background-color: black;
+    color: white;
 }
 
 </style>

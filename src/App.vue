@@ -318,7 +318,7 @@ export default {
         showModal8 : false,
         showModal9 : false,
         showModal10 : false,
-        showSurvey:true,
+        showSurvey: false,
       }
     },
 
@@ -567,6 +567,8 @@ footer marquee{
   padding: 10px;
   background-color: #222222;
   color: white;
+  z-index: 1;
+  /*problem with marquee when on Survey TO CHECK */
 }
 footer p{
   font-size: 0.7rem;
