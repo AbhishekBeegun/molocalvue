@@ -272,6 +272,7 @@ viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
    
   <marquee @click="toggleSurvey">Take a survey to get 1 year of good luck</marquee>
   <p>Copyright © 2022 Abhishek Beegun</p>
+  <p>Made using</p><svg enableBackground="new 0 0 2500 2165.1" width="25" height="25" viewBox="0 0 2500 2165.1" xmlns="http://www.w3.org/2000/svg"><path d="m1538.7 0-288.7 500-288.7-500h-961.3l1250 2165.1 1250-2165.1z" fill="#4dba87"/><path d="m1538.7 0-288.7 500-288.7-500h-461.3l750 1299 750-1299z" fill="#435466"/></svg>
 </footer>
 
 
