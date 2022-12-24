@@ -4,7 +4,7 @@
         <div class="modal">
 
 
-            <div class="imgtop" @click="BackgroundColors = 'cornflowerblue'" >
+            <div class="imgtop" >
              <slot></slot>
             </div>
         
@@ -60,10 +60,20 @@ export default {
     width:100%;
     height: 25vh;
     border-radius: 15px;
-    background: v-bind(BackgroundColors);
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: red;
+    animation-name: pavion;
+    animation-duration:20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pavion {
+  0%   {background-color: tomato;}
+  25%  {background-color: cornflowerblue;}
+  50%  {background-color: yellow;}
+  100% {background-color: limegreen;}
 }
 .clmrw{
     display: flex;
